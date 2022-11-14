@@ -1,10 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'; // this is already part of js. No need for npm i.
 
 const Message = ({ msg }) => {
   return (
     <div className='alert alert-info alert-dismissible fade show' role='alert'>
-      {msg}
+      {msg}     
+      {/* ^ replace dummy text with our msg prop */}
       <button
         type='button'
         className='close'
